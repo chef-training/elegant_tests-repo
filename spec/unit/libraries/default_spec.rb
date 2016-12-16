@@ -1,5 +1,5 @@
 require 'spec_helper'
-require './libraries/default'
+require_relative '../../../libraries/default'
 
 describe Opscode::Ark::ProviderHelpers do
   class Subject
