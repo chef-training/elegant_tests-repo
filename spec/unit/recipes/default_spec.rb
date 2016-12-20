@@ -266,11 +266,6 @@ describe 'ark::default' do
       attribute = chef_run.node['ark']['prefix_home']
       expect(attribute).to eq "/usr/local"
     end
-
-    it "tar binary" do
-      attribute = chef_run.node['ark']['tar']
-      expect(attribute).to eq "/bin/tar"
-    end
   end
 
   context 'when no attributes are specified, on Windows' do
